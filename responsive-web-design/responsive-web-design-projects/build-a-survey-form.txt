@@ -1,0 +1,46 @@
+<style>
+  #survey-form {
+    display: flex;
+    flex-direction: column;
+  }
+</style>
+
+<h1 id="title">freeCodeCamp Survey Form</h1>
+<p id="description">Please take a moment to provide some feedback to help improve the platform</p>
+<form id="survey-form">
+  <label id="name-label" for="name">Name</label>
+  <input id="name" type="text" placeholder="Enter your name" required>
+  <label id="email-label" for="email">Email</label>
+  <input id="email" type="email" placeholder="Enter your email" required>
+  <label id="number-label" for="rating">Rate the platform:</label>
+  <input id="number" type="number" min="1" max="10" placeholder="Enter a rating (1-10)">
+  <p>Which option best describes your current role?</p>
+  <select id="dropdown">
+    <option disabled selected value>Select current role</option>
+    <option value="student">Student</option>
+    <option value="job">Full Time Job</option>
+    <option value="learner">Full Time Learner</option>
+    <option value="other">Other</option>
+  </select>
+  <p>Would you recommend freeCodeCamp?</p>
+  <label>Yes</label>
+  <input name="recommend" type="radio" value="yes">
+  <label>Maybe</label>
+  <input name="recommend" type="radio" value="maybe">
+  <label>No</label>
+  <input name="recommend" type="radio" value="no">
+  <p>What would you like to see improved? (check all that apply)</p>
+  <label>Front-end projects</label>
+  <input type="checkbox" value="front-end projects">
+  <label>Back-end projects</label>
+  <input type="checkbox" value="back-end projects">
+  <label>Challenges</label>
+  <input type="checkbox" value="challenges">
+  <label>Open Source projects</label>
+  <input type="checkbox" value="open source projects">
+  <p>Any comments or suggestions?</p>
+  <textarea id="comments" placeholder="Enter your comments or suggestions..."></textarea>
+  <button id="submit" type="submit">Submit</button>
+
+</form>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
