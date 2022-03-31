@@ -1,0 +1,7 @@
+function mutation(arr) {
+  let base = arr[0].toLowerCase();
+  let target = arr[1].toLowerCase();
+  return target.split("").filter(elem => base.includes(elem)).length === target.length;
+}
+
+mutation(["hello", "hey"]);
