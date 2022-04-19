@@ -1,0 +1,5 @@
+function sumAll(arr) {
+  return [...Array(Math.max(arr[0], arr[1]) + 1).keys()].slice(Math.min(arr[0], arr[1])).reduce((sum, n) => sum + n, 0);
+}
+
+sumAll([1, 4]);
