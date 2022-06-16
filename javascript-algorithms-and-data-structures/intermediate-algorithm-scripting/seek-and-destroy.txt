@@ -1,0 +1,9 @@
+function destroyer(arr) {
+  let results = arr.slice()
+  for (let i = 1; i < [...arguments].length; i++) {
+    results = results.filter(val => val !== arguments[i])
+  }
+  return results;
+}
+
+destroyer([1, 2, 3, 1, 2, 3], 2, 3);
